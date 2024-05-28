@@ -1,6 +1,6 @@
-## Which ones will be the faster to find the element in the list?
+## Does inheritance makes it slower?
 
-- A) Classes --> classes will be faster
-- B) Structs
-- C) Same
+- A) YES
+- B) NO --> nop it doesn't make it slower
+- C) What is inheritance?
 - D) I don't know
