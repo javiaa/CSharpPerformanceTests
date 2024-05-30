@@ -35,27 +35,27 @@ public class ResultFailVsExceptionBenchmark
         return result.Value;
     }
 
-    [Benchmark]
-    public string GetUserWithException()
-    {
-        try
-        {
-            return _getUserWithExceptionService.GetUser(3).Username;
-        }
-        catch (Exception ex)
-        {
-            return ex.Message == "UserNotFound" ? UserDoesNotExistsMessage : UnknownErrorMessage;
-        }
-    }
-
-    [Benchmark]
-    public string GetUserWithResult()
-    {
-        var result = _getUserWithResultService.GetUser(3);
-        if(!result.IsSuccess)
-        {
-            return result.Error == "UserNotFound" ? UserDoesNotExistsMessage : UnknownErrorMessage;
-        }
-        return result.Value.Username;
-    }
+    // [Benchmark]
+    // public string GetUserWithException()
+    // {
+    //     try
+    //     {
+    //         return _getUserWithExceptionService.GetUser(3).Username;
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         return ex.Message == "UserNotFound" ? UserDoesNotExistsMessage : UnknownErrorMessage;
+    //     }
+    // }
+    //
+    // [Benchmark]
+    // public string GetUserWithResult()
+    // {
+    //     var result = _getUserWithResultService.GetUser(3);
+    //     if(!result.IsSuccess)
+    //     {
+    //         return result.Error == "UserNotFound" ? UserDoesNotExistsMessage : UnknownErrorMessage;
+    //     }
+    //     return result.Value.Username;
+    // }
 }

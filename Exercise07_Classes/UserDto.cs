@@ -39,6 +39,23 @@ public record UserDtoRecord(Guid Id, string Username, DateTime? CreatedDate);
 public readonly record struct UserDtoRecordStruct(Guid Id, string Username, DateTime? CreatedDate);
 
 
+public sealed class UserSealedDto
+{
+    public UserSealedDto(Guid id, string username, DateTime? createdDate)
+    {
+        Id = id;
+        Username = username;
+        CreatedDate = createdDate;
+    }
+
+
+    public Guid Id { get; set; }
+    public string Username { get; set; }
+    public DateTime? CreatedDate { get; set; }
+}
+
+public sealed record UserDtoSealedRecord(Guid Id, string Username, DateTime? CreatedDate);
+
 
 public class User2Dto
 {
