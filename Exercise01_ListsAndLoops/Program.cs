@@ -9,7 +9,7 @@ public class Program
     {
         // loops
         // BenchmarkRunner.Run<LoopsComparison>();
-        // BenchmarkRunner.Run<LoopsCollectionTypesComparison>();
+        BenchmarkRunner.Run<LoopsCollectionTypesComparison>();
 
         // contains, vs where vs Any vs First
          // BenchmarkRunner.Run<ContainsFindComparison>();
@@ -17,7 +17,7 @@ public class Program
         // multiple enumerations
         // BenchmarkRunner.Run<ToListVsEnumComparison>();
         // BenchmarkRunner.Run<MultipleEnumerationComparison>();
-         BenchmarkRunner.Run<MultipleEnumerationComparison_V2>();
+         // BenchmarkRunner.Run<MultipleEnumerationComparison_V2>();
 
 
 
