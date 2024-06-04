@@ -1,6 +1,6 @@
-## Is making .ToList() in each step make the execution faster?
+## Which will be the SLOWEST execution?
 
-- A) No, slower in both cases
-- B) Yes, in both executions (intermediate counts and only final count)
-- C) Only in the one with intermediate counts
-- D) Only in the one with the count at the end
+- A) Making to .ToList() and .Count() in every step?
+- B) Making to .ToList() in every step and .Count() at the end?
+- C) Keeping IEnumerable() and .Count() in every step?
+- D) Keeping IEnumerable() in every step and .Count() at the end?

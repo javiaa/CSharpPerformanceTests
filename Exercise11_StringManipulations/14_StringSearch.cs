@@ -12,11 +12,17 @@ public class StringSearch
     [GlobalSetup]
     public void Setup()
     {
-        _data = "The quick brown fox jumps over the lazy dog. ";
-        _data = String.Concat(System.Linq.Enumerable.Repeat(_data, 1000));
+        var stringWithFox = "The quick brown fox jumps over the lazy dog. ";
+        var stringWithoutFox = "The quick brown cat jumps over the lazy dog. ";
+
+        _data = String.Concat(System.Linq.Enumerable.Repeat(stringWithoutFox, 500));
+        _data += stringWithFox;
+        _data += String.Concat(System.Linq.Enumerable.Repeat(stringWithoutFox, 500));
 
         _searchTerm = "fox";
     }
+
+
 
     [Benchmark]
     public void UseIndexOf()

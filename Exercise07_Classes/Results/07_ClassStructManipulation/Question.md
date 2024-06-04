@@ -1,4 +1,4 @@
-## Which will be the faster object creation and manipulation?
+## Which will be the fastest object creation and manipulation?
 
 - A) Class
 - B) Struct passing obj to functions

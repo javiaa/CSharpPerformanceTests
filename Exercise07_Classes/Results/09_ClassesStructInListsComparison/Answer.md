@@ -1,4 +1,4 @@
-## Which ones will be the faster to find the element in the list?
+## In which type will be faster to find the element in the list?
 
 - A) Classes --> classes will be faster
 - B) Structs

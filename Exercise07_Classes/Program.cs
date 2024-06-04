@@ -9,9 +9,9 @@ public class Program
     {
         // class vs records
 
-        BenchmarkRunner.Run<ClassRecordStructComparisonSimple>();
+        // BenchmarkRunner.Run<ClassRecordStructComparisonSimple>();
         // BenchmarkRunner.Run<SimpleObjectMutabilityComparison>();
-        // BenchmarkRunner.Run<ClassStructManipulationComparison>();
+        BenchmarkRunner.Run<ClassStructManipulationComparison>();
         // BenchmarkRunner.Run<ClassesStructInListsComparison>();
 
         // the cost of inheritance
